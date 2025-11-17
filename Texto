@@ -1,16 +1,26 @@
 Descomposición-Come-Cocos (Pac-Nan)
 
-Personajes:
-Pac-Man / Comecocos: 
+Personajes: 
+Pac-Man / Come-Cocos: Personaje principal que controlar
 Fantasmas: Enemigos Principales
-  Blinky (Fantasma rojo)
-  Pinky (Fantasma rosa)
-  Inky (Fantasma azul celeste)
-  Clyde (Fantasma naranja)
 Escenario: Es un laberinto con una endidura lateral que sirve de bucle
 Quesitos: Se dividen en 2
   Pequeños: Aumentan la cantidad de puntos
   Grandes: Dan puntos y dan 10 segundos de un estado donde los fantasmas pasan de amenazas a presa, donde tocas a los enemigos en ese estado obtendras puntos y hara que estos se retiren a la casilla de entrada
+
+Abstaccion:
+Pac-Man: Movimiento en cruz, arriba, abajo, izquierda y derecha, 3 posibles estados
+  Vivo: Es donde puede moverse y comer quesos para aumentar su puntuacion
+  Muerto: Es el estado que se llega una vez sea tocado por uno de los fantasmas y en este no puedes hacer nada, ya que se mostrara la pantalla de game over
+  Modo despues de comer un queso grande: Por 10 segundos una vez toques un fantasma en lugar de pasar a estado muerto, lo comes y obtienes sus puntos, junto a que los fantasmas huiran de el
+Fantasmas: Los fantasmas tienen un comportamiento propio, pero comparten 3 estados comunes
+  Vivo: En este tienen un comportamiento personalizado en su forma de moverse y una vez tocan a Pac-Man, este pasara a estado muerto
+    Blinky (Fantasma rojo): Persigue directamente a Pac-Man de manera agresiva.
+    Pinky (Fantasma rosa): Intenta acorralarlo anticipando sus movimientos.
+    Inky (Fantasma azul celeste): Es más “aleatorio” y su comportamiento depende del de Blinky.
+    Clyde (Fantasma naranja): Deambula “aleatoriamente” hasta que Pac-Man se acerca a él, momento en el que lo persigue.
+  Miedo: El color de todos pasa a ser azul y su comportamiento comun pasara a ser huir de Pac-Man, en este modo si Pac-Man en lugar de pasar a game over, estos le daran puntos y pasaran al estado "Derrotado"
+  Derrotado: Es un estado donde su color se vuelve transparente con un contorno blanco, en este estado se moveran a su casilla de inicio y no saldran hasta pasado 5 segundos, entonces volveran en estado "Vivo"
 
 Reglas:
   Si un fantasma toca a Pac-man pierdes una vida.
@@ -19,11 +29,6 @@ Reglas:
   Si comes frutas aumenta el puntaje.
   Si comes el punto grande también llamado pastilla de poder o power pellet, los fantasmas se vuelven azules temporalmente permitiendo que te comas los fantasmas lo cual da más puntos y los devuelve a su casilla al principio de la partida que se encuentra en el centro de la pantalla.
   Si tocas los túneles en los laterales de la pantalla que parece que no llevan a ningún lado te teletransportan al otro lateral de la pantalla.
-  Cada Fantasma tiene su propio comportamiento.
-  Blinky: Persigue directamente a Pac-Man de manera agresiva.
-  Pinky:  Intenta acorralarlo anticipando sus movimientos.
-  Inky: Es más “aleatorio” y su comportamiento depende del de Blinky.
-  Clyde: Deambula “aleatoriamente” hasta que Pac-Man se acerca a él, momento en el que lo persigue.
 
 Para pasar de nivel el jugador tiene que comer todos los puntos del nivel para pasar al siguiente.
 
@@ -33,3 +38,6 @@ Avanzar niveles.
 Niveles: 
 Hay 255 niveles jugables.
 Hay un nivel 256 pero debido a un error de programación, cuando el contador interno del nivel llega a 256, la mitad derecha de la pantalla se corrompe con símbolos y gráficos aleatorios.
+
+Formas de evaluacion
+  Prueba de errores
