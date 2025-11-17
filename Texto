@@ -1,31 +1,35 @@
-Descomposición-Comecocos.
+Descomposición-Come-Cocos (Pac-Nan)
 
 Personajes:
-Pac-Man / Comecocos
-Blinky (Fantasma rojo)
-Pinky (Fantasma rosa)
-Inky (Fantasma azul celeste)
-Clyde (Fantasma naranja)
+Pac-Man / Comecocos: 
+Fantasmas: Enemigos Principales
+  Blinky (Fantasma rojo)
+  Pinky (Fantasma rosa)
+  Inky (Fantasma azul celeste)
+  Clyde (Fantasma naranja)
+Escenario: Es un laberinto con una endidura lateral que sirve de bucle
+Quesitos: Se dividen en 2
+  Pequeños: Aumentan la cantidad de puntos
+  Grandes: Dan puntos y dan 10 segundos de un estado donde los fantasmas pasan de amenazas a presa, donde tocas a los enemigos en ese estado obtendras puntos y hara que estos se retiren a la casilla de entrada
 
 Reglas:
-Si un fantasma toca a Pac-man pierdes una vida.
-Si pierdes la tres vidas pierdes la partida y se reinicia el juego.
-Si vas comiendo los puntos a lo largo de los pasillos aumenta el puntaje.
-Si comes frutas aumenta el puntaje.
-Si comes el punto grande también llamado pastilla de poder o power pellet, los fantasmas se vuelven azules temporalmente permitiendo que te comas los fantasmas lo cual da más puntos y los devuelve a su casilla al principio de la partida que se encuentra en el centro de la pantalla.
-Si tocas los túneles en los laterales de la pantalla que parece que no llevan a ningún lado te teletransportan al otro lateral de la pantalla.
-Cada Fantasma tiene su propio comportamiento.
-Blinky: Persigue directamente a Pac-Man de manera agresiva.
-Pinky:  Intenta acorralarlo anticipando sus movimientos.
-Inky: Es más “aleatorio” y su comportamiento depende del de Blinky.
-Clyde: Deambula “aleatoriamente” hasta que Pac-Man se acerca a él, momento en el que lo persigue.
+  Si un fantasma toca a Pac-man pierdes una vida.
+  Si pierdes la tres vidas pierdes la partida y se reinicia el juego.
+  Si vas comiendo los puntos a lo largo de los pasillos aumenta el puntaje.
+  Si comes frutas aumenta el puntaje.
+  Si comes el punto grande también llamado pastilla de poder o power pellet, los fantasmas se vuelven azules temporalmente permitiendo que te comas los fantasmas lo cual da más puntos y los devuelve a su casilla al principio de la partida que se encuentra en el centro de la pantalla.
+  Si tocas los túneles en los laterales de la pantalla que parece que no llevan a ningún lado te teletransportan al otro lateral de la pantalla.
+  Cada Fantasma tiene su propio comportamiento.
+  Blinky: Persigue directamente a Pac-Man de manera agresiva.
+  Pinky:  Intenta acorralarlo anticipando sus movimientos.
+  Inky: Es más “aleatorio” y su comportamiento depende del de Blinky.
+  Clyde: Deambula “aleatoriamente” hasta que Pac-Man se acerca a él, momento en el que lo persigue.
 
 Para pasar de nivel el jugador tiene que comer todos los puntos del nivel para pasar al siguiente.
 
 Objetivos:
 Ganar puntos.
 Avanzar niveles.
-
 Niveles: 
 Hay 255 niveles jugables.
 Hay un nivel 256 pero debido a un error de programación, cuando el contador interno del nivel llega a 256, la mitad derecha de la pantalla se corrompe con símbolos y gráficos aleatorios.
