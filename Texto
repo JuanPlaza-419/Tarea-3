@@ -21,6 +21,7 @@ Fantasmas: Los fantasmas tienen un comportamiento propio, pero comparten 3 estad
     Clyde (Fantasma naranja): Deambula “aleatoriamente” hasta que Pac-Man se acerca a él, momento en el que lo persigue.
   Miedo: El color de todos pasa a ser azul y su comportamiento comun pasara a ser huir de Pac-Man, en este modo si Pac-Man en lugar de pasar a game over, estos le daran puntos y pasaran al estado "Derrotado"
   Derrotado: Es un estado donde su color se vuelve transparente con un contorno blanco, en este estado se moveran a su casilla de inicio y no saldran hasta pasado 5 segundos, entonces volveran en estado "Vivo"
+Niveles: Para pasar de nivel el jugador tiene que comer todos los puntos del nivel para pasar al siguiente, aun que todos los escenarios/laberintos son similares
 
 Reglas:
   Si un fantasma toca a Pac-man pierdes una vida.
@@ -29,8 +30,6 @@ Reglas:
   Si comes frutas aumenta el puntaje.
   Si comes el punto grande también llamado pastilla de poder o power pellet, los fantasmas se vuelven azules temporalmente permitiendo que te comas los fantasmas lo cual da más puntos y los devuelve a su casilla al principio de la partida que se encuentra en el centro de la pantalla.
   Si tocas los túneles en los laterales de la pantalla que parece que no llevan a ningún lado te teletransportan al otro lateral de la pantalla.
-
-Para pasar de nivel el jugador tiene que comer todos los puntos del nivel para pasar al siguiente.
 
 Objetivos:
 Ganar puntos.
